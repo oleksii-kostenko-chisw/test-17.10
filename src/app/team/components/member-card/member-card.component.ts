@@ -13,11 +13,11 @@ export class MemberCardComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  get imagesSources(): string {
-    let result = '';
-    Object.entries(this.memberCard.imageUrl).forEach(([name, value]) => {
-      result += `${value} ${name.match(/\d+/)[0]}w, `;
-    });
-    return result;
+  get mailTo(): string {
+    return `mailto:${this.memberCard.block.link}`;
+  }
+
+  get phone(): string {
+    return `tel:${this.memberCard.block.text}`;
   }
 }

@@ -12,8 +12,8 @@
     {{ memberCard.block.title }}
   </p>
   <p class="member-card__text">{{ memberCard.block.description }}</p>
-  <a class="member-card__text member-card__text--email" href="">{{
+  <a class="member-card__text member-card__text--email" [href]="mailTo">{{
     memberCard.block.link
   }}</a>
-  <a class="member-card__text" href="">{{ memberCard.block.text }}</a>
+  <a class="member-card__text" [href]="phone">{{ memberCard.block.text }}</a>
 </div>
