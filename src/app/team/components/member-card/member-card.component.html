@@ -1,0 +1,14 @@
+<div class="member-card__wrapper">
+  <div class="member-card__image-wrapper">
+    <img class="member-card__image" src="" [srcset]="imagesSources" alt="" />
+  </div>
+
+  <p class="member-card__text member-card__text--name">
+    {{ memberCard.block.title }}
+  </p>
+  <p class="member-card__text">{{ memberCard.block.description }}</p>
+  <a class="member-card__text member-card__text--email" href="">{{
+    memberCard.block.link
+  }}</a>
+  <a class="member-card__text" href="">{{ memberCard.block.text }}</a>
+</div>
