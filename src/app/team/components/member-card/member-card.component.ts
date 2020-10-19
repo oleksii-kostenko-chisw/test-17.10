@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IMemberCardBlock } from '../../models/member-card-block.model';
+import { IMemberCardBlockVM } from '../../models/member-card-block.model';
 
 @Component({
   selector: 'app-member-card',
@@ -7,7 +7,7 @@ import { IMemberCardBlock } from '../../models/member-card-block.model';
   styleUrls: ['./member-card.component.scss'],
 })
 export class MemberCardComponent implements OnInit {
-  @Input() memberCard: IMemberCardBlock;
+  @Input() memberCard: IMemberCardBlockVM;
 
   constructor() {}
 

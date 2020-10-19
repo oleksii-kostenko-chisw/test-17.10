@@ -12,7 +12,7 @@ export interface IImageUrlItem {
   [name: string]: string;
 }
 
-export interface IMemberCardBlockPresentationalModel {
+export interface IMemberCardBlockVM {
   block: {
     title: string;
     description: string;
@@ -20,4 +20,5 @@ export interface IMemberCardBlockPresentationalModel {
     text: string;
   };
   imageUrl: string;
+  imageSrcSet: string;
 }

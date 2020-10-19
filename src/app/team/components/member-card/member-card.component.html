@@ -1,6 +1,11 @@
 <div class="member-card__wrapper">
   <div class="member-card__image-wrapper">
-    <img class="member-card__image" src="" [srcset]="imagesSources" alt="" />
+    <img
+      class="member-card__image"
+      [src]="memberCard.imageUrl"
+      [srcset]="memberCard.imageSrcSet"
+      alt=""
+    />
   </div>
 
   <p class="member-card__text member-card__text--name">

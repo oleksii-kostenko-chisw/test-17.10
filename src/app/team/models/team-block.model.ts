@@ -1,4 +1,4 @@
-import { ITeamAttributes, ITeamAttributesPresentationalModel } from './team-attributes.model';
+import { ITeamAttributes, ITeamAttributesVM } from './team-attributes.model';
 
 export interface ITeamBlockItem {
   type: string;
@@ -6,8 +6,7 @@ export interface ITeamBlockItem {
   attributes: ITeamAttributes;
 }
 
-export interface ITeamBlockItemPresentationalModel {
+export interface ITeamBlockItemVM {
   id: number;
-  attributes: ITeamAttributesPresentationalModel;
+  attributes: ITeamAttributesVM;
 }
-
