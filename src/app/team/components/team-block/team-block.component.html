@@ -1,0 +1,9 @@
+<div id="{{ teamBlockItem.id }}" class="team-block__wrapper">
+  <h2 class="team-block__title">{{ teamBlockItem.attributes.title }}</h2>
+  <div class="team-block__cards">
+    <app-member-card
+      *ngFor="let member of teamBlockItem.attributes.memberCards | keyvalue"
+      [memberCard]="member.value"
+    ></app-member-card>
+  </div>
+</div>
